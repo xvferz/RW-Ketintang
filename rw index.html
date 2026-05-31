@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Resmi RW XX Surabaya</title>
+    <style>
+        /* Pengaturan Dasar */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header (Oranye khas referensi) */
+        header {
+            background-color: #FF6B35;
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-container h1 {
+            margin: 0;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+        .logo-container p {
+            margin: 0;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffe066;
+        }
+
+        /* Hero Banner */
+        .hero {
+            background: linear-gradient(135deg, #FF6B35 0%, #FFB627 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            margin-bottom: 40px;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Layout Konten Utama */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        h3.section-title {
+            color: #0B243B;
+            border-bottom: 2px solid #FF6B35;
+            padding-bottom: 10px;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        /* Profil Grid */
+        .profil-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .struktur-org {
+            background-color: #f1f5f9;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .struktur-org ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        /* Jadwal Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #0B243B;
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Download Section */
+        .download-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        .download-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #f8fafc;
+            border-left: 4px solid #FF6B35;
+            border-radius: 4px;
+        }
+
+        .btn-download {
+            background-color: #0B243B;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        .btn-download:hover {
+            background-color: #FF6B35;
+        }
+
+        /* Footer (Biru Dongker khas referensi) */
+        footer {
+            background-color: #0A192F;
+            color: #cbd5e1;
+            padding: 50px 50px 20px 50px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+            border-bottom: 1px solid #1e293b;
+            padding-bottom: 30px;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .footer-col p, .footer-col ul {
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 768px) {
+            header { flex-direction: column; text-align: center; gap: 15px; }
+            nav ul { flex-wrap: wrap; justify-content: center; }
+            .profil-grid, .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bagian Header -->
+    <header>
+        <div class="logo-container">
+            <h1>RW 05 KETINTANG</h1>
+            <p>Kota Surabaya, Jawa Timur</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#jadwal">Jadwal Acara</a></li>
+                <li><a href="#download">Layanan Surat</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Bagian Hero Banner -->
+    <div class="hero">
+        <h2>Selamat Datang di Portal Layanan Warga</h2>
+        <p>Mewujudkan Lingkungan RW yang Rukun, Aman, Inovatif, dan Terdepan dalam Pelayanan Publik Administratif di Surabaya.</p>
+    </div>
+
+    <div class="container">
+        
+        <!-- Bagian Profil -->
+        <section id="profil">
+            <h3 class="section-title">Profil & Kepengurusan RW</h3>
+            <div class="profil-grid">
+                <div>
+                    <p><strong>Alamat Sekretariat:</strong><br>
+                    Jl. Ketintang Madya No. 45, Gayungan, Surabaya, Jawa Timur 60231</p>
+                    <p><strong>Contact Person:</strong><br>
+                    Bpk. Budi Santoso (Ketua RW) - 0812-XXXX-XXXX<br>
+                    Ibu Siti Aminah (Sekretaris) - 0813-XXXX-XXXX</p>
+                    <p><strong>Jam Layanan Administratif:</strong><br>
+                    Senin - Jumat: 18.30 - 21.00 WIB</p>
+                </div>
+                <div class="struktur-org">
+                    <strong>Struktur Organisasi Inti:</strong>
+                    <ul>
+                        <li><strong>Ketua RW:</strong> Bpk. Budi Santoso</li>
+                        <li><strong>Wakil Ketua:</strong> Bpk. Agus Setiawan</li>
+                        <li><strong>Sekretaris:</strong> Ibu Siti Aminah</li>
+                        <li><strong>Bendahara:</strong> Bpk. Heru Purnomo</li>
+                        <li><strong>Seksi Keamanan:</strong> Bpk. Yanto</li>
+                        <li><strong>Seksi Humas & Pemuda:</strong> Sdr. Rizky</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Jadwal -->
+        <section id="jadwal">
+            <h3 class="section-title">Agenda & Kegiatan Rutin Warga</h3>
+            <p>Informasi kegiatan yang dilaksanakan secara berkala untuk mempererat kerukunan warga.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama Kegiatan</th>
+                        <th>Waktu Pelaksanaan</th>
+                        <th>Lokasi</th>
+                        <th>Keterangan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kerja Bakti Lingkungan</td>
+                        <td>Minggu Pertama (06.30 WIB)</td>
+                        <td>Fasum Balai RW</td>
+                        <td>Wajib perwakilan 1 orang/KK</td>
+                    </tr>
+                    <tr>
+                        <td>Rapat Pleno Pengurus RT/RW</td>
+                        <td>Jumat Kliwon (19.00 WIB)</td>
+                        <td>Balai RW 05</td>
+                        <td>Dihadiri seluruh ketua RT</td>
+                    </tr>
+                    <tr>
+                        <td>Posyandu Balita & Lansia</td>
+                        <td>Rabu Kedua (08.00 WIB)</td>
+                        <td>Balai Pertemuan Warga</td>
+                        <td>Membawa KMS/Buku Sehat</td>
+                    </tr>
+                    <tr>
+                        <td>Senam Bersama</td>
+                        <td>Setiap Hari Minggu (06.00 WIB)</td>
+                        <td>Lapangan Olahraga RW</td>
+                        <td>Terbuka untuk umum</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Bagian Download Template Surat -->
+        <section id="download">
+            <h3 class="section-title">Unduh Template Surat Pengantar (Birokrasi Mandiri)</h3>
+            <p>Untuk mempercepat proses pelayanan administratif, warga dapat mengunduh dan mencetak mandiri template surat di bawah ini sebelum meminta stempel dan tanda tangan Ketua RT/RW.</p>
+            <div class="download-list">
+                <div class="download-item">
+                    <span>Surat Pengantar RT/RW (Umum)</span>
+                    <a href="#" class="btn-download">Download .DOC</a>
+                </div>
+                <div class="download-item">
+                    <span>Surat Keterangan Domisili</span>
+                    <a href="#" class="btn-download">Download .DOC</a>
+                </div>
+                <div class="download-item">
+                    <span>Surat Keterangan Tidak Mampu (SKTM)</span>
+                    <a href="#" class="btn-download">Download .DOC</a>
+                </div>
+                <div class="download-item">
+                    <span>Surat Pengantar Pindah Nikah</span>
+                    <a href="#" class="btn-download">Download .DOC</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Bagian Footer -->
+    <footer id="kontak">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Kontak & Alamat</h4>
+                <p>SEKRETARIAT RW 05<br>
+                Jl. Ketintang Madya No. 45, Kec. Gayungan, Surabaya, Jawa Timur 60231</p>
+                <p>Email: admin@rw05ketintang.id</p>
+            </div>
+            <div class="footer-col">
+                <h4>Ikuti Kami</h4>
+                <ul>
+                    <li>Instagram: @rw05ketintang</li>
+                    <li>Facebook: Info Warga RW 05</li>
+                    <li>WhatsApp Center: 0812-XXXX-XXXX</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Tautan Penting</h4>
+                <ul>
+                    <li><a href="https://surabaya.go.id" target="_blank">Pemkot Surabaya</a></li>
+                    <li><a href="#">Call Center 112 Surabaya</a></li>
+                    <li><a href="#">Lapor Kepolisian Sektor</a></li>
+                    <li><a href="#">Puskesmas Gayungan</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Portal Warga RW 05 Surabaya | All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
