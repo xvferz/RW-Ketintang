@@ -65,13 +65,15 @@
 
         /* Hero Banner Baru dengan Gambar */
         .hero {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('banner-rw.jpg');
-            background-size: cover;
-            background-position: center bottom;
-            color: white;
-            text-align: center;
-            padding: 120px 20px;
+            width: 100%;
             margin-bottom: 40px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .hero-img {
+            width: 100%;
+            height: auto; /* Membuat gambar otomatis proporsional di HP & Laptop */
+            display: block;
         }
 
         .hero h2 {
@@ -216,10 +218,33 @@
             font-size: 13px;
         }
 
+      /* --- PERBAIKAN TAMPILAN KHUSUS LAYAR HP --- */
         @media (max-width: 768px) {
-            header { flex-direction: column; text-align: center; gap: 15px; }
-            nav ul { flex-wrap: wrap; justify-content: center; }
-            .profil-grid, .footer-grid { grid-template-columns: 1fr; }
+            header { 
+                flex-direction: column; 
+                text-align: center; 
+                gap: 12px; 
+                padding: 15px 20px; /* Diperkecil ukurannya agar tidak makan tempat di HP */
+            }
+            
+            .logo-container h1 { 
+                font-size: 20px; /* Mengecilkan nama RW di HP */
+            }
+            
+            nav ul { 
+                flex-wrap: wrap; 
+                justify-content: center; 
+                gap: 12px; 
+            }
+            
+            nav ul li a { 
+                font-size: 12px; /* Mengecilkan font menu agar pas satu baris di HP */
+            }
+            
+            section {
+                padding: 20px; /* Mengurangi padding konten di HP agar lebih luas */
+                margin-bottom: 30px;
+            }
         }
     </style>
 </head>
