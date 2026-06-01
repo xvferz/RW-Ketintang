@@ -246,6 +246,17 @@
                 margin-bottom: 30px;
             }
         }
+        /* --- Perbaikan Garis Struktur Organisasi di HP --- */
+        @media (max-width: 768px) {
+            .org-line {
+                display: none !important; /* Sembunyikan semua garis ranting yang melayang di HP */
+            }
+            .org-row {
+                flex-direction: column !important; /* Paksa baris pengurus tegak lurus ke bawah */
+                align-items: center !important;
+                gap: 15px !important;
+            }
+        }
     </style>
 </head>
 <body>
