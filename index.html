@@ -373,29 +373,52 @@
             </table>
         </section>
         <!-- Bagian Download Template Surat -->
+        <!-- Bagian Download & Preview Template Surat -->
         <section id="download">
             <h3 class="section-title">Unduh Template Surat Pengantar (Birokrasi Mandiri)</h3>
-            <p>Untuk mempercepat proses pelayanan administratif, warga dapat mengunduh dan mencetak mandiri template surat di bawah ini sebelum meminta stempel dan tanda tangan Ketua RT/RW.</p>
-            <div class="download-list">
-                <div class="download-item">
-                    <span>Surat Pengantar RT/RW (Umum)</span>
-                    <a href="#" class="btn-download">Download .DOC</a>
+            <p>Untuk mempercepat proses pelayanan administratif, warga dapat melihat pratinjau (preview) atau mengunduh langsung template surat di bawah ini sebelum meminta stempel dan tanda tangan Ketua RT/RW.</p>
+            
+            <!-- Menggunakan Flexbox Vertikal agar memanjang ke bawah dengan rapi -->
+            <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 25px;">
+                
+                <!-- Surat 1 -->
+                <div style="background: #f8fafc; border-left: 4px solid #1E6091; border-radius: 6px; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+                    <span style="font-weight: 600; color: #0B243B; font-size: 15px;">1. Surat Pengantar RT/RW (Umum)</span>
+                    <div style="display: flex; gap: 8px;">
+                        <button onclick="bukaPreview('https://docs.google.com/document/d/ID_FILE_SURAT_1/preview')" style="background-color: #64748b; color: white; padding: 8px 16px; border: none; border-radius: 4px; font-size: 13px; font-weight: 600; cursor: pointer; white-space: nowrap;">Lihat Preview</button>
+                        <a href="https://docs.google.com/uc?export=download&id=ID_FILE_SURAT_1" style="background-color: #0B243B; color: white; padding: 8px 16px; border-radius: 4px; font-size: 13px; font-weight: 600; white-space: nowrap; text-align: center;">Download .DOC</a>
+                    </div>
                 </div>
-                <div class="download-item">
-                    <span>Surat Keterangan Domisili</span>
-                    <a href="#" class="btn-download">Download .DOC</a>
+
+                <!-- Surat 2 -->
+                <div style="background: #f8fafc; border-left: 4px solid #1E6091; border-radius: 6px; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+                    <span style="font-weight: 600; color: #0B243B; font-size: 15px;">2. Surat Keterangan Domisili</span>
+                    <div style="display: flex; gap: 8px;">
+                        <button onclick="bukaPreview('https://docs.google.com/document/d/ID_FILE_SURAT_2/preview')" style="background-color: #64748b; color: white; padding: 8px 16px; border: none; border-radius: 4px; font-size: 13px; font-weight: 600; cursor: pointer; white-space: nowrap;">Lihat Preview</button>
+                        <a href="https://docs.google.com/uc?export=download&id=ID_FILE_SURAT_2" style="background-color: #0B243B; color: white; padding: 8px 16px; border-radius: 4px; font-size: 13px; font-weight: 600; white-space: nowrap; text-align: center;">Download .DOC</a>
+                    </div>
                 </div>
-                <div class="download-item">
-                    <span>Surat Keterangan Tidak Mampu (SKTM)</span>
-                    <a href="#" class="btn-download">Download .DOC</a>
+
+                <!-- Surat 3 -->
+                <div style="background: #f8fafc; border-left: 4px solid #1E6091; border-radius: 6px; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+                    <span style="font-weight: 600; color: #0B243B; font-size: 15px;">3. Surat Keterangan Tidak Mampu (SKTM)</span>
+                    <div style="display: flex; gap: 8px;">
+                        <button onclick="bukaPreview('https://docs.google.com/document/d/ID_FILE_SURAT_3/preview')" style="background-color: #64748b; color: white; padding: 8px 16px; border: none; border-radius: 4px; font-size: 13px; font-weight: 600; cursor: pointer; white-space: nowrap;">Lihat Preview</button>
+                        <a href="https://docs.google.com/uc?export=download&id=ID_FILE_SURAT_3" style="background-color: #0B243B; color: white; padding: 8px 16px; border-radius: 4px; font-size: 13px; font-weight: 600; white-space: nowrap; text-align: center;">Download .DOC</a>
+                    </div>
                 </div>
-                <div class="download-item">
-                    <span>Surat Pengantar Pindah Nikah</span>
-                    <a href="#" class="btn-download">Download .DOC</a>
+
+                <!-- Surat 4 -->
+                <div style="background: #f8fafc; border-left: 4px solid #1E6091; border-radius: 6px; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+                    <span style="font-weight: 600; color: #0B243B; font-size: 15px;">4. Surat Pengantar Pindah Nikah</span>
+                    <div style="display: flex; gap: 8px;">
+                        <button onclick="bukaPreview('https://docs.google.com/document/d/ID_FILE_SURAT_4/preview')" style="background-color: #64748b; color: white; padding: 8px 16px; border: none; border-radius: 4px; font-size: 13px; font-weight: 600; cursor: pointer; white-space: nowrap;">Lihat Preview</button>
+                        <a href="https://docs.google.com/uc?export=download&id=ID_FILE_SURAT_4" style="background-color: #0B243B; color: white; padding: 8px 16px; border-radius: 4px; font-size: 13px; font-weight: 600; white-space: nowrap; text-align: center;">Download .DOC</a>
+                    </div>
                 </div>
+
             </div>
         </section>
-
     </div>
 
     <!-- Bagian Footer -->
