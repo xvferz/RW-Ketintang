@@ -468,43 +468,44 @@
     </div> </section>
 
         <!-- Bagian Rekap Mutasi Surat (Dashboard Data Riil LENGKAP) -->
+        <!-- Bagian Rekap Mutasi Surat (Dashboard Data Riil LENGKAP - Terkini) -->
         <section id="rekap-mutasi">
             <h3 class="section-title">Rekapitulasi Mutasi Surat (Maret - Mei 2026)</h3>
-            <p>Dashboard interaktif data pelayanan administrasi, surat masuk, dan surat keluar yang tercatat secara riil pada database sekretariat RW 01 Ketintang.</p>
+            <p>Dashboard interaktif data pelayanan administrasi, alur surat masuk, dan surat keluar yang tercatat secara riil pada database sekretariat RW 01 Ketintang.</p>
             
             <!-- Grid Kartu Statistik Utama -->
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-top: 25px; margin-bottom: 35px;">
                 
-                <!-- Kartu 1: Total Surat Masuk -->
+                <!-- Kartu 1: Total Surat Masuk (Riil) -->
                 <div style="background: #ffffff; border: 1px solid #e2e8f0; border-left: 5px solid #0284c7; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
                     <span style="font-size: 12px; font-weight: bold; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">Total Surat Masuk</span>
-                    <div style="font-size: 28px; font-weight: 800; color: #0B243B; margin-top: 5px;">32 <span style="font-size: 14px; font-weight: 500; color: #64748b;">Berkas</span></div>
+                    <div style="font-size: 28px; font-weight: 800; color: #0B243B; margin-top: 5px;">45 <span style="font-size: 14px; font-weight: 500; color: #64748b;">Berkas</span></div>
                 </div>
 
-                <!-- Kartu 2: Total Surat Keluar -->
+                <!-- Kartu 2: Total Surat Keluar (Riil) -->
                 <div style="background: #ffffff; border: 1px solid #e2e8f0; border-left: 5px solid #1E6091; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
                     <span style="font-size: 12px; font-weight: bold; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">Total Surat Keluar</span>
                     <div style="font-size: 28px; font-weight: 800; color: #0B243B; margin-top: 5px;">30 <span style="font-size: 14px; font-weight: 500; color: #64748b;">Berkas</span></div>
                 </div>
 
-                <!-- Kartu 3: Rata-rata Lintas Surat -->
+                <!-- Kartu 3: Rata-rata Lintas Surat (Riil) -->
                 <div style="background: #ffffff; border: 1px solid #e2e8f0; border-left: 5px solid #0f766e; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
                     <span style="font-size: 12px; font-weight: bold; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">Rata-rata Mutasi</span>
-                    <div style="font-size: 28px; font-weight: 800; color: #0B243B; margin-top: 5px;">20.7 <span style="font-size: 14px; font-weight: 500; color: #64748b;">Surat/Bln</span></div>
+                    <div style="font-size: 28px; font-weight: 800; color: #0B243B; margin-top: 5px;">25 <span style="font-size: 14px; font-weight: 500; color: #64748b;">Surat/Bln</span></div>
                 </div>
 
-                <!-- Kartu 4: Tren Utama Kategori -->
+                <!-- Kartu 4: Tren Utama Kategori (Riil) -->
                 <div style="background: #ffffff; border: 1px solid #e2e8f0; border-left: 5px solid #b45309; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
-                    <span style="font-size: 12px; font-weight: bold; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">Kategori Terbanyak</span>
-                    <div style="font-size: 15px; font-weight: 700; color: #0B243B; margin-top: 8px; line-height: 1.2;">Surat Perintah & SKCK</div>
-                    <span style="font-size: 11px; color: #b45309; font-weight: 600;">Dominasi Alur Kerja RW</span>
+                    <span style="font-size: 12px; font-weight: bold; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">Layanan Terbanyak</span>
+                    <div style="font-size: 15px; font-weight: 700; color: #0B243B; margin-top: 8px; line-height: 1.2;">Keterangan Usaha</div>
+                    <span style="font-size: 11px; color: #b45309; font-weight: 600;">(9 Permohonan Masuk)</span>
                 </div>
             </div>
 
-            <!-- Layout Visual Komparasi Bulanan & Detail Dokumen -->
+            <!-- Layout Visual Mutasi Bulanan & Detail Dokumen -->
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
                 
-                <!-- Sisi Kiri: Grafik Batang Ganda Komparatif -->
+                <!-- Sisi Kiri: Grafik Batang Ganda Komparatif Berdasarkan Data Baru -->
                 <div style="background: #f8fafc; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0;">
                     <h4 style="margin-top: 0; color: #0B243B; margin-bottom: 10px; font-size: 16px;">📊 Perbandingan Lintas Surat Bulanan</h4>
                     <div style="display: flex; gap: 15px; font-size: 11px; margin-bottom: 20px; font-weight: 600;">
@@ -515,70 +516,69 @@
                     <!-- Perbandingan MARET -->
                     <div style="margin-bottom: 18px;">
                         <div style="font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">Maret 2026</div>
-                        <!-- Bar Surat Masuk (12) -->
+                        <!-- Bar Surat Masuk (15) -->
                         <div style="background: #e2e8f0; height: 10px; border-radius: 4px; width: 100%; overflow: hidden; margin-bottom: 4px;">
-                            <div style="background: #0284c7; height: 100%; width: 80%; border-radius: 4px;"></div>
+                            <div style="background: #0284c7; height: 100%; width: 100%; border-radius: 4px;"></div>
                         </div>
                         <!-- Bar Surat Keluar (10) -->
                         <div style="background: #e2e8f0; height: 10px; border-radius: 4px; width: 100%; overflow: hidden; margin-bottom: 4px;">
                             <div style="background: #1E6091; height: 100%; width: 66.7%; border-radius: 4px;"></div>
                         </div>
-                        <div style="font-size: 11px; color: #64748b; text-align: right;">Masuk: 12 | Keluar: 10</div>
+                        <div style="font-size: 11px; color: #64748b; text-align: right;">Masuk: 15 | Keluar: 10</div>
                     </div>
 
                     <!-- Perbandingan APRIL -->
                     <div style="margin-bottom: 18px;">
                         <div style="font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">April 2026</div>
-                        <!-- Bar Surat Masuk (12) -->
+                        <!-- Bar Surat Masuk (15) -->
                         <div style="background: #e2e8f0; height: 10px; border-radius: 4px; width: 100%; overflow: hidden; margin-bottom: 4px;">
-                            <div style="background: #0284c7; height: 100%; width: 80%; border-radius: 4px;"></div>
+                            <div style="background: #0284c7; height: 100%; width: 100%; border-radius: 4px;"></div>
                         </div>
                         <!-- Bar Surat Keluar (10) -->
                         <div style="background: #e2e8f0; height: 10px; border-radius: 4px; width: 100%; overflow: hidden; margin-bottom: 4px;">
                             <div style="background: #1E6091; height: 100%; width: 66.7%; border-radius: 4px;"></div>
                         </div>
-                        <div style="font-size: 11px; color: #64748b; text-align: right;">Masuk: 12 | Keluar: 10</div>
+                        <div style="font-size: 11px; color: #64748b; text-align: right;">Masuk: 15 | Keluar: 10</div>
                     </div>
 
                     <!-- Perbandingan MEI -->
                     <div style="margin-bottom: 5px;">
                         <div style="font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">Mei 2026</div>
-                        <!-- Bar Surat Masuk (8) -->
+                        <!-- Bar Surat Masuk (15) -->
                         <div style="background: #e2e8f0; height: 10px; border-radius: 4px; width: 100%; overflow: hidden; margin-bottom: 4px;">
-                            <div style="background: #0284c7; height: 100%; width: 53.3%; border-radius: 4px;"></div>
+                            <div style="background: #0284c7; height: 100%; width: 100%; border-radius: 4px;"></div>
                         </div>
                         <!-- Bar Surat Keluar (10) -->
                         <div style="background: #e2e8f0; height: 10px; border-radius: 4px; width: 100%; overflow: hidden; margin-bottom: 4px;">
                             <div style="background: #1E6091; height: 100%; width: 66.7%; border-radius: 4px;"></div>
                         </div>
-                        <div style="font-size: 11px; color: #64748b; text-align: right;">Masuk: 8 | Keluar: 10</div>
+                        <div style="font-size: 11px; color: #64748b; text-align: right;">Masuk: 15 | Keluar: 10</div>
                     </div>
                 </div>
 
-                <!-- Sisi Kanan: Distribusi Klasifikasi Berkas Masuk -->
+                <!-- Sisi Kanan: Klasifikasi Riil Berkas Surat Masuk -->
                 <div style="background: #f8fafc; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0;">
-                    <h4 style="margin-top: 0; color: #0B243B; margin-bottom: 15px; font-size: 16px;">📁 Karakteristik Jenis Surat Masuk</h4>
+                    <h4 style="margin-top: 0; color: #0B243B; margin-bottom: 15px; font-size: 16px;">📁 Karakteristik Jenis Surat Masuk Warga</h4>
                     <ul style="list-style: none; padding: 0; margin: 0; font-size: 14px;">
                         <li style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px dashed #cbd5e1;">
-                            <span style="color: #475569;">📋 1. Surat Perintah / Instruksi</span> <strong style="color: #0284c7;">5 Berkas</strong>
+                            <span style="color: #475569;">💼 1. Surat Keterangan Usaha</span> <strong style="color: #0284c7;">9 Berkas</strong>
                         </li>
                         <li style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px dashed #cbd5e1;">
-                            <span style="color: #475569;">🔍 2. Surat Konfirmasi Instansi</span> <strong style="color: #0284c7;">5 Berkas</strong>
+                            <span style="color: #475569;">🔍 2. Surat Keterangan Tidak Mampu</span> <strong style="color: #0284c7;">8 Berkas</strong>
+                        </li>
+                        <li style="display: solid; display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px dashed #cbd5e1;">
+                            <span style="color: #475569;">📍 3. Surat Keterangan Domisili</span> <strong style="color: #0284c7;">8 Berkas</strong>
                         </li>
                         <li style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px dashed #cbd5e1;">
-                            <span style="color: #475569;">🏢 3. Nota Dinas Kecamatan</span> <strong style="color: #0284c7;">4 Berkas</strong>
-                        </li>
-                        <li style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px dashed #cbd5e1;">
-                            <span style="color: #475569;">📢 4. Surat Pemberitahuan Umum</span> <strong style="color: #0284c7;">4 Berkas</strong>
+                            <span style="color: #475569;">📋 4. Surat Pengantar SKCK</span> <strong style="color: #0284c7;">6 Berkas</strong>
                         </li>
                         <li style="display: flex; justify-content: space-between; padding: 8px 0;">
-                            <span style="color: #475569;">✉️ 5. Dokumen Edaran & Undangan</span> <strong style="color: #0284c7;">14 Berkas</strong>
+                            <span style="color: #475569;">✉️ 5. Pengantar KK / Nikah / KTP</span> <strong style="color: #0284c7;">14 Berkas</strong>
                         </li>
                     </ul>
                 </div>
             </div>
-        </section>
-        <!-- Bagian Download Template Surat -->
+        </section>        <!-- Bagian Download Template Surat -->
         <!-- Bagian Download & Preview Template Surat -->
        <!-- Bagian Download & Preview Template Surat (LENGKAP) -->
         <section id="download">
